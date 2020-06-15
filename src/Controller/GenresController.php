@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Routing\Annotation\Route;
+
+class GenresController extends AbstractController
+{
+    /**
+     * @Route("/genres", name="genres")
+     */
+    public function index()
+    {
+        return $this->render('genres/index.html.twig', [
+            'controller_name' => 'GenresController',
+        ]);
+    }
+}
